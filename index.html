@@ -3,31 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AH Digital Labs legal information">
+  <meta name="description" content="AH Digital Labs — software, engineering tools and digital products operated by Ing. Andrej Halas in Slovakia.">
+  <meta name="robots" content="index,follow">
   <title>AH Digital Labs</title>
   <style>
-    :root { color-scheme: light dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    body { margin: 0; color: #172033; background: #f7f8fb; }
-    main { max-width: 720px; margin: 0 auto; padding: 72px 24px; }
-    h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 3.5rem); letter-spacing: -.04em; }
-    p { color: #566074; line-height: 1.7; }
-    a { color: #6750a4; }
-    .card { margin-top: 40px; padding: 24px; background: #fff; border: 1px solid #e3e6ee; border-radius: 16px; }
-    @media (prefers-color-scheme: dark) {
-      body { color: #eef0f7; background: #11131a; }
-      p { color: #b9c0d0; }
-      a { color: #cbb8ff; }
-      .card { background: #1a1d27; border-color: #303543; }
+    * { box-sizing: border-box; }
+    :root {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #172033;
+      background: #f5f7fb;
+    }
+    body { margin: 0; min-height: 100vh; background: linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%); }
+    main { max-width: 920px; margin: 0 auto; padding: 72px 24px 56px; }
+    .eyebrow { margin: 0 0 14px; font-size: .82rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #5d6a80; }
+    h1 { margin: 0; font-size: clamp(2.6rem, 7vw, 4.8rem); line-height: .98; letter-spacing: -.055em; color: #111827; }
+    .lead { max-width: 680px; margin: 22px 0 0; font-size: 1.12rem; line-height: 1.75; color: #596579; }
+    .grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 20px; margin-top: 42px; }
+    .card { background: rgba(255,255,255,.92); border: 1px solid #e1e6ef; border-radius: 18px; padding: 26px; box-shadow: 0 10px 30px rgba(20,34,60,.05); }
+    h2 { margin: 0 0 18px; font-size: 1.08rem; color: #192132; }
+    dl { display: grid; grid-template-columns: 118px 1fr; gap: 11px 16px; margin: 0; }
+    dt { color: #6b7280; }
+    dd { margin: 0; font-weight: 650; color: #1f2937; }
+    .products { display: grid; gap: 12px; }
+    .product { display: block; padding: 15px 16px; border: 1px solid #e4e8f0; border-radius: 12px; text-decoration: none; color: #172033; background: #fafbfc; transition: transform .15s ease, border-color .15s ease; }
+    .product:hover { transform: translateY(-1px); border-color: #bcc6d6; }
+    .product strong { display: block; margin-bottom: 4px; }
+    .product span { color: #6b7280; font-size: .92rem; }
+    .contact { margin-top: 20px; }
+    a { color: #3659b5; }
+    footer { margin-top: 34px; padding-top: 22px; border-top: 1px solid #e4e8ef; color: #7a8496; font-size: .9rem; }
+    @media (max-width: 720px) {
+      main { padding-top: 48px; }
+      .grid { grid-template-columns: 1fr; }
+      dl { grid-template-columns: 100px 1fr; }
     }
   </style>
 </head>
 <body>
   <main>
+    <p class="eyebrow">Independent digital product studio</p>
     <h1>AH Digital Labs</h1>
-    <div class="card">
-      <h2>Baby Sleep</h2>
-      <p><a href="./baby-sleep/privacy/">Privacy Policy</a></p>
-    </div>
+    <p class="lead">
+      Software, engineering tools and practical digital products. AH Digital Labs is operated by
+      Ing. Andrej Halas in Slovakia.
+    </p>
+
+    <section class="grid" aria-label="Company information and products">
+      <div class="card">
+        <h2>Business information</h2>
+        <dl>
+          <dt>Operator</dt>
+          <dd>Ing. Andrej Halas</dd>
+          <dt>Business ID</dt>
+          <dd>57910201</dd>
+          <dt>Tax ID</dt>
+          <dd>1120543842</dd>
+          <dt>Country</dt>
+          <dd>Slovakia</dd>
+        </dl>
+        <p class="contact">
+          Contact: <a href="mailto:ahdigitallabs@gmail.com">ahdigitallabs@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Products</h2>
+        <div class="products">
+          <a class="product" href="https://electrodesigner.com/">
+            <strong>ElectroDesigner</strong>
+            <span>Engineering calculators and electrical design tools</span>
+          </a>
+          <a class="product" href="https://servisnyprotokol.sk/">
+            <strong>ServisnyProtokol.sk</strong>
+            <span>Digital service and installation protocols</span>
+          </a>
+          <a class="product" href="./baby-sleep/privacy/">
+            <strong>Baby Sleep</strong>
+            <span>Privacy policy</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 AH Digital Labs. All rights reserved.
+    </footer>
   </main>
 </body>
 </html>
