@@ -3,29 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for the Baby Sleep mobile application">
-  <title>Baby Sleep — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Hush, Little One (Búvaj krásne), an offline baby sleep sounds app.">
+  <title>Hush, Little One — Privacy Policy</title>
   <style>
-    :root { color-scheme: light dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    body { margin: 0; color: #172033; background: #f7f8fb; }
-    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 72px; }
-    article { padding: clamp(24px, 5vw, 48px); background: #fff; border: 1px solid #e3e6ee; border-radius: 18px; box-shadow: 0 12px 40px rgba(32, 40, 64, .06); }
-    h1 { margin-top: 0; font-size: clamp(2rem, 6vw, 3.25rem); letter-spacing: -.04em; }
-    h2 { margin-top: 2rem; font-size: 1.25rem; }
-    p, li { color: #4f596d; line-height: 1.75; }
-    a { color: #6750a4; }
-    .meta { color: #6d7587; }
-    .languages { display: flex; gap: 8px; margin-bottom: 28px; }
-    .languages a, .languages span { padding: 7px 11px; border: 1px solid #d7dbe5; border-radius: 999px; text-decoration: none; }
-    .languages .active { color: #fff; background: #6750a4; border-color: #6750a4; }
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --ink: #281d24;
+      --muted: #70666c;
+      --paper: #fffaf4;
+      --page: #f7eee5;
+      --line: #eadbd2;
+      --accent: #b65345;
+      --accent-soft: #f6dfd8;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--page); }
+    main { max-width: 800px; margin: 0 auto; padding: 32px 18px 56px; }
+    article {
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 14px 42px rgba(68, 42, 38, .08);
+    }
+    h1 { margin: 0 0 12px; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.12; letter-spacing: -.04em; }
+    h2 { margin: 2rem 0 .65rem; font-size: 1.2rem; line-height: 1.35; }
+    p, li { color: var(--muted); line-height: 1.72; }
+    li + li { margin-top: .35rem; }
+    a { color: var(--accent); text-underline-offset: .18em; }
+    .meta { margin-top: 0; font-size: .95rem; }
+    .languages { display: flex; gap: 8px; margin: 0 0 28px; }
+    .languages a, .languages span {
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: .9rem;
+    }
+    .languages .active { color: #fff; background: var(--accent); border-color: var(--accent); }
     address { font-style: normal; }
     @media (prefers-color-scheme: dark) {
-      body { color: #eef0f7; background: #11131a; }
-      article { background: #1a1d27; border-color: #303543; box-shadow: none; }
-      p, li, .meta { color: #bbc2d1; }
-      a { color: #cbb8ff; }
-      .languages a, .languages span { border-color: #454b5b; }
-      .languages .active { color: #fff; background: #6750a4; border-color: #6750a4; }
+      :root {
+        --ink: #f4ede8;
+        --muted: #c2b6b2;
+        --paper: #211e22;
+        --page: #151417;
+        --line: #393238;
+        --accent: #f0a094;
+        --accent-soft: #51312f;
+      }
+      article { box-shadow: none; }
+      .languages .active { color: #211e22; }
     }
   </style>
 </head>
@@ -37,8 +66,8 @@
         <a href="./sk/" lang="sk">SK</a>
       </nav>
 
-      <h1>Baby Sleep — Privacy Policy</h1>
-      <p class="meta">Version: 23 September 2026</p>
+      <h1>Hush, Little One — Privacy Policy</h1>
+      <p class="meta">Also known as Búvaj krásne · Last updated: 2 October 2026</p>
 
       <h2>Data controller</h2>
       <address>
@@ -46,56 +75,50 @@
           AH Digital Labs<br>
           Ing. Andrej Halás<br>
           Business ID (IČO): 57 910 201<br>
-          911 05 Trenčín<br>
+          911 05 Trenčín, Slovakia<br>
           Jedľová 2646/27<br>
           Email: <a href="mailto:ahdigitallabs@gmail.com">ahdigitallabs@gmail.com</a>
         </p>
       </address>
 
-      <h2>About Baby Sleep</h2>
-      <p>Baby Sleep is an offline application designed for parents and caregivers to play sleep sounds and create their own short audio recordings.</p>
+      <h2>About the app</h2>
+      <p>Hush, Little One (Búvaj krásne) is a baby sleep sounds app for parents and caregivers. It includes standard soothing sounds and lets you record or import your own audio. Standard sounds can be played without an account, without ads, and offline.</p>
 
-      <h2>Microphone and audio recordings</h2>
-      <p>The app requests microphone access only when the user deliberately starts the custom recording feature. A custom recording:</p>
+      <h2>Microphone, recordings, and imported audio</h2>
+      <p>The app requests microphone access only when you deliberately start recording. Recordings and audio files you choose to import:</p>
       <ul>
-        <li>is created on the user's device,</li>
-        <li>is processed locally on the device,</li>
-        <li>is stored in the app's local storage,</li>
-        <li>is not sent to the data controller,</li>
-        <li>is not sent to advertising or analytics platforms.</li>
+        <li>are created or selected by you on your device,</li>
+        <li>are processed and stored locally in the app,</li>
+        <li>are not sent to the developer, advertising services, or analytics services.</li>
       </ul>
-      <p>Users can delete their custom recordings directly in the app. Android backup and device-to-device transfer are disabled for app data.</p>
+      <p>You can delete your custom audio in the app. App data is excluded from Android backup and device-to-device transfer. Your recordings and imported audio are not restored when you restore a Premium purchase.</p>
 
-      <h2>Account</h2>
-      <p>Baby Sleep does not require a user account.</p>
+      <h2>Accounts</h2>
+      <p>The app does not require you to create an account or sign in.</p>
 
-      <h2>Advertising and tracking</h2>
-      <p>The app:</p>
-      <ul>
-        <li>does not contain advertising,</li>
-        <li>does not use advertising identifiers,</li>
-        <li>does not contain a separate analytics SDK,</li>
-        <li>does not contain a separate crash-reporting SDK.</li>
-      </ul>
-      <p>The data controller uses aggregated statistics and diagnostics available through Google Play Console and Android Vitals. Google may collect this information according to the rules and settings of Google and Android services; Baby Sleep does not send it to the data controller's server.</p>
+      <h2>Advertising, analytics, and diagnostics</h2>
+      <p>The app contains no ads, does not use advertising identifiers, and has no separate analytics, advertising, or crash-reporting SDK. Google Play may make aggregated usage statistics and crash diagnostics available to the developer through Play Console and Android Vitals, depending on Google and Android service settings. Google processes information for these services under its own terms and privacy policies; the app does not send this information to a developer-operated server.</p>
 
-      <h2>Purchases</h2>
-      <p>Lifetime Premium is a one-time digital unlock distributed through Google Play Billing. Google Play processes payments and payment details. Baby Sleep receives the information needed to determine whether the user owns the relevant product and stores the unlock status locally for offline use. Google's processing of information is governed by Google's own terms and policies.</p>
+      <h2>Premium purchases</h2>
+      <p>Lifetime Premium is a one-time, non-renewing digital purchase made through Google Play Billing. Google processes the payment and payment details. The app receives the purchase information needed to check whether Premium is unlocked and stores the unlock status locally so it can be used offline. Google Play manages the purchase record. Restoring a purchase restores the Premium entitlement, not audio files that were stored only on your device. Google's handling of purchase information is described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
-      <h2>Retention and deletion</h2>
-      <p>Local app data remains on the device until the user deletes it or uninstalls the app. Google Play manages the purchase record. The Restore Purchase feature may verify ownership of Lifetime Premium again.</p>
+      <h2>Storage and deletion</h2>
+      <p>Recordings, imported audio, and app settings remain in the app's local storage until you delete them or uninstall the app. Android backup and device-to-device transfer for app data are disabled. Purchase records are managed by Google Play; the app's Restore Purchase feature may contact Google Play to check your Lifetime Premium entitlement.</p>
 
       <h2>Children</h2>
-      <p>The app is intended for parents and caregivers, not for children as independent users.</p>
+      <p>The app is designed for parents and caregivers, not for children to use independently. It does not ask users to submit children's personal information.</p>
 
       <h2>Security</h2>
-      <p>The app minimises data transmission and keeps personal recordings locally. However, no system can be described as completely secure.</p>
+      <p>The app is designed to minimise data transmission and keep personal audio on your device. No method of storage or transmission can be guaranteed to be completely secure.</p>
+
+      <h2>Your privacy rights</h2>
+      <p>Depending on the applicable data protection law and the information concerned, you may have the right to request access to, correction or deletion of personal data, to restrict or object to certain processing, or to lodge a complaint with a supervisory authority. To contact the developer about privacy, email <a href="mailto:ahdigitallabs@gmail.com">ahdigitallabs@gmail.com</a>. For information processed by Google Play, please also refer to Google's privacy information and account controls. You may contact the <a href="https://dataprotection.gov.sk/en/">Office for Personal Data Protection of the Slovak Republic</a>.</p>
 
       <h2>Changes to this policy</h2>
-      <p>If the way data is processed changes or a new SDK or service is added, this policy will be updated before the relevant version is released.</p>
+      <p>If the app's data practices change or a new SDK or service is added, this policy will be updated before the relevant app version is released.</p>
 
       <h2>Contact</h2>
-      <p>Privacy questions: <a href="mailto:ahdigitallabs@gmail.com">ahdigitallabs@gmail.com</a></p>
+      <p>For privacy questions, contact <a href="mailto:ahdigitallabs@gmail.com">ahdigitallabs@gmail.com</a>.</p>
     </article>
   </main>
 </body>
