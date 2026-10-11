@@ -82,3 +82,7 @@ URL: https://andrejhalas.github.io/ad-destroyer/
 - Live simulator canonical and OG image URLs match the deployed host/subdirectory.
 - Inspected console logs contained browser-extension metadata errors only; no site-origin JavaScript error was observed in these checks.
 - Desktop screenshot showed readable targets and weapon controls. No claim is made about real mobile touch, audible output, haptics, Lighthouse or field Core Web Vitals.
+
+## V2 upgrade validation
+
+Production diagnostics: zero errors/warnings. 13 automated tests pass, including the original lifecycle/tools/SEO checks and four additional checks covering fragment collision/expiry, bounded mobile movement, effect limits/reduced motion, rage boss gating, held/keyboard target stability and live combo expiry. Output remains below the 500KB static and 50KB JavaScript budgets. V2 live visual and console checks are performed after publication; the earlier live Chrome section describes V1 only. Real Android/iPhone audio, haptic and touch performance are still unmeasured.

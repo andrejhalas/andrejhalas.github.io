@@ -23,7 +23,7 @@ The standalone `.github/workflows/pages.yml` is provided for a future dedicated 
 
 ## Release state
 
-Production build, TypeScript diagnostics and all nine automated tests pass for the actual target origin and base path. Published successfully at https://andrejhalas.github.io/ad-destroyer/ (deployment commit `8c1182f33892453598e2ca7434e981604cb89dc2`, Pages run `38165619247`: success). Live Chrome smoke checks passed for all weapons, score updates, simulator and direct popup test. Physical-device audio, haptic and browser-policy acceptance remain manual checks.
+Production build, TypeScript diagnostics and all thirteen automated tests pass for the actual target origin and base path. Published successfully at https://andrejhalas.github.io/ad-destroyer/ (deployment commit `8c1182f33892453598e2ca7434e981604cb89dc2`, Pages run `38165619247`: success). Live Chrome smoke checks passed for all weapons, score updates, simulator and direct popup test. Physical-device audio, haptic and browser-policy acceptance remain manual checks.
 
 ## Included features
 
@@ -142,3 +142,9 @@ Cloudflare Web Analytics is separate from the local game events; its beacon does
 - WebSite structured data is used; no invented reviews, ratings, or unsupported rich-result claims are added.
 
 See **QA_REPORT.md** for verified checks, verification limits, and next steps.
+
+## V2 destruction engine
+
+Moving and tilting targets speed up across waves. Touch capture pins held targets; keyboard focus pins targets for accessible aiming. A bounded Canvas physics renderer breaks cards into texture fragments with gravity, rotation, wall/floor rebounds, weapon-specific sparks, expanding shock rings and score callouts. Hammer, chainsaw and laser have procedural weapon visuals and distinct synthesized audio; held chainsaw uses a stoppable motor loop. Rage builds from damage and destruction; Detonate/R hits all vulnerable targets without bypassing boss shields/skip windows. Combos expire visibly, kills reward time, bosses have original animated art, and the result screen reports kills, best combo and rank. Focus mode expands the cabinet. Reduced motion disables moving targets, recoil, fragments, beams and drifting callouts.
+
+All graphics/audio are code-generated; no external game engine, font, image or audio fetch is needed. Effects are bounded at 160 texture fragments, 280 sparks, 12 rings, 16 labels and 18 cached card textures. Diagnostics, static build and 13 tests pass. Physical-device acceptance remains manual.
