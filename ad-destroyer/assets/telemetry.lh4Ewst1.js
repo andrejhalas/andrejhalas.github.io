@@ -1,0 +1,1 @@
+function e(e,t={}){window.dispatchEvent(new CustomEvent(`ad-destroyer:event`,{detail:{name:e,properties:t}}))}export{e as t};

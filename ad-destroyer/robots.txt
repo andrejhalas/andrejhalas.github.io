@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /ad-destroyer/popup-test-window/
+Sitemap: https://andrejhalas.github.io/ad-destroyer/sitemap.xml
